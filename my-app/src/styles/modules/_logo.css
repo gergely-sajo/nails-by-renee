@@ -1,0 +1,44 @@
+/* Styles without media */
+
+.logo, .logo-sticky {
+    transition: 0.3s;
+    font-size: 1.5rem;
+    position: relative;
+    font-family: 'Great Vibes';
+}
+
+.logo-sticky {
+    font-size: 2rem;
+}
+
+.logo a, .logo-sticky a {
+    color: #000;
+    position: relative;
+}
+
+/* Min-width: 450px Styles */
+
+@media screen and (min-width: 450px) {
+
+    .logo {
+        font-size: 1.7rem;
+    }
+
+    .logo-sticky {
+        font-size: 1.3rem;
+    }
+}
+
+/* Min-width: 1200px Styles */
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 2rem;
+    }
+}
+
+/* Min-width: 1440px Styles */
+
+@media screen and (min-width: 1440px) {
+    
+}

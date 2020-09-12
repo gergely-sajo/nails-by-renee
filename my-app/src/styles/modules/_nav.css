@@ -1,0 +1,221 @@
+/* Styles without media */
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    background-color: #EFEFE7;
+    z-index: 1;
+    padding: 30px 0 25px 0;
+    transition: 0.3s;
+}
+
+.nav__mobile {
+    height: 100%;
+    background-color: #EFEFE7;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    max-width: 400px;
+    z-index: 200;
+}
+
+.nav__mobile__background-shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.nav-sticky {
+    position: fixed;
+    width: 100vw;
+    background-color: #EFEFE7;
+    z-index: 1;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    margin-left: auto;
+    display: none;
+}
+
+.nav-elements, .nav-elements-sticky {
+    display: flex;
+    transition: 0.3s;
+}
+
+.nav__elements--mobile {
+    flex-direction: column;
+    margin-top: 3rem;
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.nav__elements--mobile li {
+    color: #8e8d8a;
+    font-size: 1.3rem;
+}
+
+.nav__elements--mobile a {
+    padding: 1.5rem 0 1.5rem 2rem;
+    position: relative;
+    border-bottom: 1px solid #EFEFE7;
+}
+
+.nav-elements li {
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.nav-items {
+    color: #8e8d8a;
+}
+
+.nav-elements-sticky li {
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-elements a {
+    position: relative;
+}
+
+.nav-elements a:hover {
+    position: relative;
+    color: #C9362B;
+}
+
+.nav-elements a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width: 100%;
+    height: 2px;
+    background-color: #BB9EB2;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease-in;
+}
+
+.nav-elements a:hover::after {
+    transform: scaleX(1);
+}
+
+/* General Mobile Menu Icon CSS */
+
+.nav__mobile-menu--icon::before, .nav__mobile-menu--icon-sticky::before, .nav__mobile-menu--icon--menu-open-x::before, .nav__mobile-menu--icon--menu-open-x--sticky::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    width: 20px;
+    height: 3px;
+    background-color: #C9362B;
+    transition: all .3s ease-out;
+    transform-origin: 0 0;
+}
+
+.nav__mobile-menu--icon, .nav__mobile-menu--icon-sticky, .nav__mobile-menu--icon--menu-open-x, .nav__mobile-menu--icon--menu-open-x--sticky {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 20px;
+    height: 3px;
+    background-color: #C9362B;
+    transition: all .3s ease-out;
+}
+
+.nav__mobile-menu--icon::after, .nav__mobile-menu--icon-sticky::after, .nav__mobile-menu--icon--menu-open-x::after, .nav__mobile-menu--icon--menu-open-x--sticky::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 20px;
+    height: 3px;
+    background-color: #C9362B;
+    transition: all .3s ease-out;
+    transform-origin: 0 100%;
+}
+
+/* Mobile Menu Open - Mobile Menu X CSS */
+
+.nav__mobile-menu--icon--menu-open-x::before, .nav__mobile-menu--icon--menu-open-x--sticky::before {
+    background-color: #C9362B;
+    z-index: 300;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+.nav__mobile-menu--icon--menu-open-x::after, .nav__mobile-menu--icon--menu-open-x--sticky::after  {
+    background-color: #C9362B;
+    z-index: 300;
+    transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+
+/* Mobile Menu Icon - Sticky CSS */
+
+.nav__mobile-menu--icon-sticky {
+    top: 25px;
+    right: 25px;
+}
+
+/* Mobile Menu Open - Mobile Menu X - Sticky CSS  */
+
+.nav__mobile-menu--icon--menu-open-x--sticky {
+    top: 25px;
+    right: 25px;
+}
+
+/* --- RESPONSIVE DESIGN RULES --- */
+
+/* Min-width: 750px Styles */
+
+@media screen and (min-width: 750px) {
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-elements li:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .nav__mobile-menu--icon, .nav__mobile-menu--icon-sticky {
+        opacity: 0;
+    }
+}
+
+/* Min-width: 930px Styles */
+
+@media screen and (min-width: 900px) {
+
+
+    .nav-elements li:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+/* Min-width: 1200px Styles */
+
+@media screen and (min-width: 1200px) {
+
+    
+}
+
+/* Min-width: 1440px Styles */
+
+@media screen and (min-width: 1440px) {
+    
+
+}
