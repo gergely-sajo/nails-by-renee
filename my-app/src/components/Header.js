@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { CgFacebook } from "react-icons/cg";
+import { FiInstagram } from "react-icons/fi";
 
 const Header = ({ sticky }) => {
   const [mobileMenuOpen, setmobileMenuOpen] = useState(false)
@@ -23,34 +25,52 @@ const Header = ({ sticky }) => {
   }
 
   return (
-    <div id="header" className={sticky ? "nav-sticky" : "nav"}>
-
-      <div className="wrapper nav-inner">
-          <div className={sticky ? "logo-sticky" : "logo"}>
-            <a href="#">Nails by Renee</a>
+    <div id="header">
+      <div className="top">
+        <div className="wrapper">
+          <p>
+            <a href="https://www.facebook.com/Nails-By-Renee-133872024835153/" target="_blank">
+              <CgFacebook />
+            </a>
+            <a href="" target="_blank">
+              <FiInstagram />
+            </a>
+          </p>
+          <p>
+            <a href="tel:+36301234667">Tel.: +36 30 1234567</a>
+          </p>
         </div>
-        
-        <div className="nav__mobile--menu">
-          <span 
-            className={mobileMenu && sticky ? "nav__mobile-menu--icon--menu-open-x--sticky" : (mobileMenu && !sticky ? "nav__mobile-menu--icon--menu-open-x" : (sticky && !mobileMenu ? "nav__mobile-menu--icon-sticky" : "nav__mobile-menu--icon"))}
-            onClick={() => setmobileMenuOpen(!mobileMenuOpen)}
-            />
-          { mobileMenuBackgroundShadow }
-          { mobileMenu }
-        </div>
+      </div>
 
-        <div className="nav-bar">
-          <ul className={sticky ? "nav-elements-sticky" : "nav-elements"}>
-            <li><a href="#features" id="features-link" className="nav-items">Szolgáltatások</a></li>
-            <li><a href="#my-work" id="my-work-link" className="nav-items">Munkáim</a></li>
-            <li><a href="#testimonials" id="e´testimonials-link" className="nav-items">Vélemények</a></li>
-            <li><a href="#prices" id="prices-link" className="nav-items">Árak</a></li>
-            <li><a href="#about" id="about-link" className="nav-items">Rólam</a></li>
-            <li><a href="#contact" id="contact-link" className="nav-items">Kapcsolat</a></li>
-          </ul>
-        </div>
+      <div className={sticky ? "nav-sticky" : "nav"}>
 
-      </div>  
+        <div className="wrapper nav-inner">
+            <div className={sticky ? "logo-sticky" : "logo"}>
+              <a href="#">Nails by Renee</a>
+          </div>
+          
+          <div className="nav__mobile--menu">
+            <span 
+              className={mobileMenu && sticky ? "nav__mobile-menu--icon--menu-open-x--sticky" : (mobileMenu && !sticky ? "nav__mobile-menu--icon--menu-open-x" : (sticky && !mobileMenu ? "nav__mobile-menu--icon-sticky" : "nav__mobile-menu--icon"))}
+              onClick={() => setmobileMenuOpen(!mobileMenuOpen)}
+              />
+            { mobileMenuBackgroundShadow }
+            { mobileMenu }
+          </div>
+
+          <div className="nav-bar">
+            <ul className={sticky ? "nav-elements-sticky" : "nav-elements"}>
+              <li><a href="#features" id="features-link" className="nav-items">Szolgáltatások</a></li>
+              <li><a href="#my-work" id="my-work-link" className="nav-items">Munkáim</a></li>
+              <li><a href="#testimonials" id="e´testimonials-link" className="nav-items">Vélemények</a></li>
+              <li><a href="#prices" id="prices-link" className="nav-items">Árak</a></li>
+              <li><a href="#about" id="about-link" className="nav-items">Rólam</a></li>
+              <li><a href="#contact" id="contact-link" className="nav-items">Kapcsolat</a></li>
+            </ul>
+          </div>
+
+        </div>  
+      </div>
     </div>
   )
 }

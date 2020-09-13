@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './components/Header'
-import Home from './components/Home'
+import Hero from './components/Hero'
 import Features from './components/Features'
 import MyWork from './components/MyWork'
 import Testimonials from './components/Testimonials'
@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <Header sticky={isSticky}/>
-      <Home element={element}/>
+      <Hero element={element}/>
       <Features />
       <MyWork />
       <Testimonials />

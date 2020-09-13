@@ -3,20 +3,20 @@
 .nav {
     position: fixed;
     width: 100vw;
-    background-color: #EFEFE7;
+    background-color: rgba(248, 229, 223, 0.7);
     z-index: 1;
-    padding: 30px 0 25px 0;
+    padding: 15px 0 15px 0;
     transition: 0.3s;
 }
 
 .nav__mobile {
     height: 100%;
-    background-color: #EFEFE7;
+    background-color: rgba(248, 229, 223, 1);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     max-width: 400px;
     z-index: 200;
 }
@@ -27,14 +27,14 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
 .nav-sticky {
     position: fixed;
     width: 100vw;
-    background-color: #EFEFE7;
+    background-color: rgba(248, 229, 223, 0.7);
     z-index: 1;
     padding: 15px;
     transition: all 0.3s ease-in-out;
@@ -57,20 +57,19 @@
 
 .nav__elements--mobile {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 6rem;
     display: flex;
-    padding-top: 1.5rem;
 }
 
 .nav__elements--mobile li {
-    color: #8e8d8a;
-    font-size: 1.3rem;
+    color: #000;
+    font-size: 1rem;
 }
 
 .nav__elements--mobile a {
     padding: 1.5rem 0 1.5rem 2rem;
     position: relative;
-    border-bottom: 1px solid #EFEFE7;
+    border-bottom: 1px solid rgba(248, 229, 223, 0.4);
 }
 
 .nav-elements li {
@@ -79,7 +78,7 @@
 }
 
 .nav-items {
-    color: #8e8d8a;
+    color: #000;
 }
 
 .nav-elements-sticky li {
@@ -123,18 +122,18 @@
     right: 0px;
     width: 20px;
     height: 3px;
-    background-color: #C9362B;
+    background-color: #000;
     transition: all .3s ease-out;
     transform-origin: 0 0;
 }
 
 .nav__mobile-menu--icon, .nav__mobile-menu--icon-sticky, .nav__mobile-menu--icon--menu-open-x, .nav__mobile-menu--icon--menu-open-x--sticky {
     position: absolute;
-    top: 35px;
+    top: 26px;
     right: 35px;
     width: 20px;
     height: 3px;
-    background-color: #C9362B;
+    background-color: #000;
     transition: all .3s ease-out;
 }
 
@@ -145,7 +144,7 @@
     right: 0px;
     width: 20px;
     height: 3px;
-    background-color: #C9362B;
+    background-color: #000;
     transition: all .3s ease-out;
     transform-origin: 0 100%;
 }
@@ -153,13 +152,13 @@
 /* Mobile Menu Open - Mobile Menu X CSS */
 
 .nav__mobile-menu--icon--menu-open-x::before, .nav__mobile-menu--icon--menu-open-x--sticky::before {
-    background-color: #C9362B;
+    background-color: #000;
     z-index: 300;
     transform: rotate(45deg) scaleX(1.25);
 }
 
 .nav__mobile-menu--icon--menu-open-x::after, .nav__mobile-menu--icon--menu-open-x--sticky::after  {
-    background-color: #C9362B;
+    background-color: #000;
     z-index: 300;
     transform: rotate(-45deg) scaleX(1.25) translateY(1px);
 }
