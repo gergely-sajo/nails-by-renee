@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Features from './components/Features'
+import Services from './components/Services'
 import MyWork from './components/MyWork'
 import Testimonials from './components/Testimonials'
 import Prices from './components/Prices'
@@ -21,7 +21,7 @@ function App() {
     <div>
       <Header sticky={isSticky}/>
       <Hero element={element}/>
-      <Features />
+      <Services />
       <MyWork />
       <Testimonials />
       <Prices />

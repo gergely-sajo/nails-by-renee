@@ -25,8 +25,8 @@ const Header = ({ sticky }) => {
   }
 
   return (
-    <div id="header">
-      <div className="top">
+    <div id="header" className="nav-header">
+      <div className="nav__top">
         <div className="wrapper">
           <p>
             <a href="https://www.facebook.com/Nails-By-Renee-133872024835153/" target="_blank">

@@ -7,10 +7,6 @@
     font-family: 'Great Vibes';
 }
 
-.logo-sticky {
-    font-size: 2rem;
-}
-
 .logo a, .logo-sticky a {
     color: #000;
     position: relative;
@@ -34,6 +30,10 @@
 @media screen and (min-width: 1200px) {
     .logo {
         font-size: 2rem;
+    }
+
+    .logo-sticky {
+        font-size: 1.7rem;
     }
 }
 

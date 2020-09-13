@@ -10,11 +10,18 @@ import img4 from '../images/hero/img4.jpg';
 
 function Hero() {
   return (
-    <div id="hero">
-      <Slider autoplay autoplaySpeed={3000} pauseOnHover="false">
-          <img src={img1} className="sliderimg"/>
-          <img src={img2} className="sliderimg"/>
-          <img src={img4} className="sliderimg"/>
+    <div id="hero" className="slider-container">
+      <Slider 
+ 
+        autoplaySpeed={3000}
+        pauseOnHover={false}
+        dots={false}
+        prevArrow={false}
+        nextArrow={false}
+      >
+        <img src={img1} className="sliderimg"/>
+        <img src={img2} className="sliderimg"/>
+        <img src={img4} className="sliderimg"/>
       </Slider>
     </div>
   )

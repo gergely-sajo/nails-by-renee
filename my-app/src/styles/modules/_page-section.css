@@ -1,0 +1,19 @@
+.page-section {
+    padding: 7rem 0;
+}
+
+.page-section__title {
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.page-section__title::after {
+    content: "";
+    width: 15%;
+    height: 10px;
+    background-color: #F8E5DF;
+    margin: 0 auto;
+    display: block;
+}

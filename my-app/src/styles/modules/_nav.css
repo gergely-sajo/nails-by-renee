@@ -1,10 +1,13 @@
 /* Styles without media */
 
-.nav {
+.nav-header {
     position: fixed;
-    width: 100vw;
-    background-color: rgba(248, 229, 223, 0.7);
     z-index: 1;
+    width: 100vw;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 15px 0 15px 0;
     transition: 0.3s;
 }
@@ -32,11 +35,8 @@
 }
 
 .nav-sticky {
-    position: fixed;
-    width: 100vw;
-    background-color: rgba(248, 229, 223, 0.7);
-    z-index: 1;
-    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -86,11 +86,15 @@
     transition: 0.3s;
 }
 
+.nav-elements-sticky li:not(:last-child) {
+    padding-right: 30px;
+}
+
 .nav-elements a {
     position: relative;
 }
 
-.nav-elements a:hover {
+.nav-elements a:hover, .nav-elements-sticky a:hover {
     position: relative;
     color: #C9362B;
 }
@@ -129,7 +133,7 @@
 
 .nav__mobile-menu--icon, .nav__mobile-menu--icon-sticky, .nav__mobile-menu--icon--menu-open-x, .nav__mobile-menu--icon--menu-open-x--sticky {
     position: absolute;
-    top: 26px;
+    top: 58px;
     right: 35px;
     width: 20px;
     height: 3px;
@@ -166,8 +170,7 @@
 /* Mobile Menu Icon - Sticky CSS */
 
 .nav__mobile-menu--icon-sticky {
-    top: 25px;
-    right: 25px;
+    top: 50px;
 }
 
 /* Mobile Menu Open - Mobile Menu X - Sticky CSS  */
@@ -175,6 +178,53 @@
 .nav__mobile-menu--icon--menu-open-x--sticky {
     top: 25px;
     right: 25px;
+}
+
+/* Nav Top Rules */
+
+.nav__top {
+    background-color: #F8E5DF;
+    font-family: 'Great Vibes';
+    text-align: right;
+    padding: 3px 0;
+    vertical-align: middle;
+}
+
+.nav__top::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav__top p {
+    float: right;
+    margin: 2px 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.nav__top a {
+    color: #000
+}
+
+.nav__top a:last-child {
+    margin-left: 10px;
+}
+
+.nav__top a:hover {
+    color: #C9362B;
+}
+
+/* Min-width: 450px Styles */
+
+@media screen and (min-width: 450px) {
+    .top {
+        padding: 5px 0;
+    }
+
+    .top p {
+        margin: 5px 10px;
+    }
 }
 
 /* --- RESPONSIVE DESIGN RULES --- */
