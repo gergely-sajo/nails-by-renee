@@ -1,0 +1,16 @@
+.btn {
+    background-color: #424242;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:hover {
+    background-color: rgba(201, 54, 43);
+    color: #fff
+}

@@ -1,14 +1,10 @@
-.service {
-    padding: 0 2rem;
-}
-
 .service__photo {
     width: 160px;
     height: 160px;
     border-radius: 80px;
     border: 6px solid #F8E5DF;
     overflow: hidden;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 10px auto;
 }
 
 .service__title {
@@ -19,4 +15,10 @@
 
 .service__desc {
     text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+    .service__photo {
+        margin: 0 auto 30px auto;
+    }
 }

@@ -3,8 +3,7 @@
 .wrapper {
     max-width: 900px;
     padding: 0 18px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /* Min-width: 1200px Styles */

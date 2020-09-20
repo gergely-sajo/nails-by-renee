@@ -1,0 +1,64 @@
+.contact__social-icon {
+    size: 45px;
+}
+
+.contact__social-icon:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.contact-email-form {
+    margin: 0 auto 2rem auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-email-form div {
+    margin-bottom: 1rem;
+}
+
+.contact-email-form__textarea {
+    height: 10rem;
+}
+
+.contact-email-form__input, .contact-email-form__textarea {
+    margin-top: 0.5rem;
+    padding: .75rem .75rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    color: #0D1E23;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F8E5DF;
+    width: 90%;
+}
+
+/* Min-width: 500px Styles */
+
+@media screen and (min-width: 500px) {
+    .contact-email-form__input, .contact-email-form__textarea {
+        width: 80%;
+    }
+}
+
+/* Min-width: 900px Styles */
+
+@media screen and (min-width: 900px) {
+    .contact-email-form__input, .contact-email-form__textarea {
+        width: 70%;
+    }
+}
+
+/* Min-width: 1200px Styles */
+
+@media screen and (min-width: 1200px) {
+    .contact-email-form__input, .contact-email-form__textarea {
+        width: 60%;
+    }
+}
+
+/* Min-width: 1440px Styles */
+
+@media screen and (min-width: 1440px) {
+    .contact-email-form__input, .contact-email-form__textarea {
+        width: 50%;
+    }
+}

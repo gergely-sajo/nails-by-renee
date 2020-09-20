@@ -12,7 +12,7 @@ function Hero() {
   return (
     <div id="hero" className="slider-container">
       <Slider 
- 
+        autoplay
         autoplaySpeed={3000}
         pauseOnHover={false}
         dots={false}

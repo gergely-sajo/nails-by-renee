@@ -35,7 +35,7 @@
 }
 
 .nav-sticky {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     padding: 5px 0;
     transition: all 0.3s ease-in-out;
 }
@@ -99,24 +99,6 @@
     color: #C9362B;
 }
 
-.nav-elements a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -30%;
-    width: 100%;
-    height: 2px;
-    background-color: #BB9EB2;
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 200ms ease-in;
-}
-
-.nav-elements a:hover::after {
-    transform: scaleX(1);
-}
-
 /* General Mobile Menu Icon CSS */
 
 .nav__mobile-menu--icon::before, .nav__mobile-menu--icon-sticky::before, .nav__mobile-menu--icon--menu-open-x::before, .nav__mobile-menu--icon--menu-open-x--sticky::before {
@@ -133,7 +115,7 @@
 
 .nav__mobile-menu--icon, .nav__mobile-menu--icon-sticky, .nav__mobile-menu--icon--menu-open-x, .nav__mobile-menu--icon--menu-open-x--sticky {
     position: absolute;
-    top: 58px;
+    top: 60px;
     right: 35px;
     width: 20px;
     height: 3px;
@@ -176,8 +158,8 @@
 /* Mobile Menu Open - Mobile Menu X - Sticky CSS  */
 
 .nav__mobile-menu--icon--menu-open-x--sticky {
-    top: 25px;
-    right: 25px;
+    top: 50px;
+    right: 35px;
 }
 
 /* Nav Top Rules */
@@ -187,7 +169,6 @@
     font-family: 'Great Vibes';
     text-align: right;
     padding: 3px 0;
-    vertical-align: middle;
 }
 
 .nav__top::after {
@@ -196,11 +177,14 @@
     display: table;
 }
 
-.nav__top p {
+.nav__top__items {
     float: right;
     margin: 2px 10px;
     letter-spacing: 1px;
-    text-align: center;
+}
+
+.nav__top__items__icons {
+    vertical-align: middle;
 }
 
 .nav__top a {

@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import MyWork from './components/MyWork'
-import Testimonials from './components/Testimonials'
 import Prices from './components/Prices'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -23,7 +22,6 @@ function App() {
       <Hero element={element}/>
       <Services />
       <MyWork />
-      <Testimonials />
       <Prices />
       <About />
       <Contact />

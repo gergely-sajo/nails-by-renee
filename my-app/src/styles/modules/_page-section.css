@@ -1,11 +1,17 @@
 .page-section {
-    padding: 7rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 .page-section__title {
     font-family: 'Great Vibes';
     font-size: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.page-section__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -16,4 +22,26 @@
     background-color: #F8E5DF;
     margin: 0 auto;
     display: block;
+}
+
+.page-section__centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 500px) {
+    .page-section {
+        padding: 2rem 0 2rem 0;
+    }
+    
+    .page-section__title {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-section {
+        padding: 4rem 0 2rem 0;
+    }
 }

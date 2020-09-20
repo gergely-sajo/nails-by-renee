@@ -1,8 +1,13 @@
 @import './base/_global.css';
+@import './modules/_generic-content-container.css';
 @import './modules/_logo.css';
+@import './modules/_btn.css';
 @import './modules/_nav.css';
 @import './modules/_slider.css';
 @import './modules/_page-section.css';
 @import './modules/_row.css';
 @import './modules/_services.css';
+@import './modules/_my-work.css';
+@import './modules/_contact.css';
 @import './modules/_wrapper.css';
+@import './modules/_footer.css';

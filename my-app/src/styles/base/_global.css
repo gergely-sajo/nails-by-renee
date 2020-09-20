@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 html {
@@ -18,17 +18,29 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
+}
+
+p {
+    line-height: 1.65;
 }
 
 a {
     text-decoration: none;
-    color: #959fa2;
+    color: #000;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+.no-underline {
+    text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
+    color: #C9362B;
 }
 
 img {
@@ -47,10 +59,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-.sm-r-m {
-    margin-right: 20px;
+table td {
+    width: 300px;
+    height: 30px;
 }
 
-.pb-2 {
-    padding-bottom: 2rem;
+tr td:last-child {
+    text-align: right;
+}
+
+table {
+    margin-bottom: 40px;
+}
+
+iframe {
+    margin: 2rem 0 2rem 0;
 }
